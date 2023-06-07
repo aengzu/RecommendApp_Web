@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/jeon3/Downloads/Startup/Startup/index.html",
+            "url": "file:///C:/Users/jeon3/source/repos/Startup/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
