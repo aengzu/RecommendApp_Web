@@ -9,9 +9,59 @@
   src: url('../fonts/Cafe24Ssurround-v2.0.otf'); /* IE9 Compat Modes */
 }
 
-body{
-  background-image:url(../img/pinkdots.jpg);
+
+
+body {
+  background-image: url("../img/pinkdots.jpg");
+  background-size: cover;
+ }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:#000000;
+  background-color: #ffc7c7;
+  padding: 8px 12px;
+}
+
+.navbar__logo i {
+  color: white;
+  padding-left: 0;
+}
+a {
+
+  text-decoration: none;
   font-family: 'Surround';
+  color:#000000
+  
+}
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar__menu li {
+  padding: 8px 30px;
+}
+
+.navbar__icons {
+  list-style: none;
+  display: flex;
+  color: white;
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+  margin: 0;
+}
+.navbar__menu li:hover {
+  background-color: white;
+  border-radius: 3px;
 }
 
 .btn-custom {
@@ -25,7 +75,7 @@ body{
   border: 1px solid #ffffff;
 }
 #pricing-table {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 #pricing-table .pricing {
 
@@ -37,14 +87,15 @@ body{
 }
 #pricing-table .pricing .pricing-table .pricing-header {
   position: relative;
-  background: #ffb0c9;
+  background:  #ff9a9a;
+
   padding: 22px 22px;
   text-align: center;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
 #pricing-table .pricing .pricing-table .pricing-header .pricing-title {
-  color: #ffffff;
+  color:  #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: 'Surround';
@@ -70,7 +121,7 @@ body{
 }
 #pricing-table .pricing .pricing-table .pricing-header .pricing-rate span {
   font-size: 16px;
-  color: #bdc3c7;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
 }
@@ -78,7 +129,7 @@ body{
   padding: 20px 0 40px 0;
   font-family: 'Surround';
   text-align: center;
-  background: #fff0f0;
+  background: #fff7f8;
   border: 1px solid #e3e3e3;
   display:block;
 }
@@ -101,8 +152,8 @@ body{
 }
 #pricing-table .pricing .pricing-list ul li i {
   margin-right: 12px;
-  color: #bdc3c7;
+  color:  #ffb9c2;
 }
 #pricing-table .pricing .pricing-list ul li span {
-  color: #34495e;
+  color:  #444444;
 }

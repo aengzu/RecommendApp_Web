@@ -16,6 +16,7 @@
 
             <link rel="stylesheet" type="text/css" href="assets/css/main.css">
             <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+          
             <!--Icon Fonts-->
 
             <link rel="stylesheet" media="screen" href="assets/fonts/font-awesome/font-awesome.min.css" />
@@ -27,20 +28,30 @@
            
                         
           </head>
+       
 
         <body>
+            <section id="body">
             
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                  <h5 class="text-white h4" >선물 취향 알아내기</h5>
-                  <span class="text-muted">선물 취향 알아내기</span>
+            <nav class="navbar">
+
+                <div class="navbar__logo">
+                  <i class="fas fa-blog">
+                  </i>
+                  <img alt="Brand" style="width:50px; height:50px;" src="./assets/img/logo1.png">
+                  <a href="">PTTO
+                      </a>
                 </div>
-              </div>
-              <nav class="navbar navbar-light" style="background-color: #fdd9d9">
-                <div class="container-fluid">
-            
-                </div>
+          
+                <ul class="navbar__menu">
+       
+               
+                </ul>
+          
               </nav>
+            
+           
+              
      	<!-- Pricing Table Section -->
         <section id="pricing-table">
             <div class="container">
@@ -49,7 +60,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="pricing-table">
                                 <div class="pricing-header">
-                                    <p class="pricing-title" id="bg">밸런스 게임 링크 전송하기</p>
+                                    <p class="pricing-title" id="bg">위장한 밸런스 게임으로 상대 취향 알아내기</p>
                                 </div>
 
                                 <div class="pricing-list">
@@ -69,7 +80,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="pricing-table">
                                 <div class="pricing-header">
-                                    <p class="pricing-title" id="idg">선물 이상형 게임 링크 전송하기</p>
+                                    <p class="pricing-title" id="idg">대놓고 밸런스 게임으로 상대 취향 알아내기</p>
                                     
                                 </div>
 
@@ -78,10 +89,10 @@
                                         <li><i class="fa fa-envelope"></i>결과 전송받을 이메일 입력하기</li>
                                         <li><span><div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                            <form action="https://sprightly-platypus-6eae66.netlify.app/" name="presentidol">
+                                            <form action="https://aesthetic-semolina-e02d20.netlify.app" name="presentidol">
                                             <input  name='exampleFormControlInput2' id="exampleFormControlInput2" type="email" class="form-control" placeholder="name@example.com">
                                             <!-- <button type="button" class="btn btn-light" id="idg_btn" >입력 후 링크 이동</button> -->
-                                            <input type='submit' id ="idg_bt" class="btn btn-light" value='입력 후 링크 이동'>
+                                            <input type='submit' id ="idg_bt" class="btn btn-light"; value='입력 후 링크 이동'>
                                             </form>
                                     </ul>
                                 </div>
@@ -92,6 +103,8 @@
             </div>
             </div>
         </section>
+            
+    </section>
 		<!-- Pricing Table Section End -->
 
         </body>
@@ -115,62 +128,7 @@
         measurementId: "G-EDEDSNXWTM"
     };
 
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
-
-
-             console.log('logtest')
-            console.log(app)
-            console.log(analytics)
-            import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
-            
-            //html 바디 내부 코드 중 밸겜 링크 전송 클릭 시, click 이벤트 실행 
-         
-
-            //이상형 게임 링크 클릭 시 작동
-            document.getElementById('idg_btn').addEventListener('click', (event) => {
-                event.preventDefault()
-                const auth = getAuth();
-                const email = document.getElementById('exampleFormControlInput2').value
-                const password = 'idg'
-        
-                
-                //email 과 password로 
-                createUserWithEmailAndPassword(auth, email, password)
-                    .then((userCredential) => {
-                    // Signed in 회원가입 성공시
-                    console.log(userCredential)
-                    const user = userCredential.user;
-                    // ...
-                    })
-                    //회원가입 실패
-                    .catch((error) => {
-                    console.log('error')
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
-        // ..
-  });
-            })
-            document.getElementById('bg_btn').addEventListener('click', (event) => {
-                event.preventDefault()
-                const email = document.getElementById('exampleFormControlInput1').value
-                const password = 'bg'
-
-                const auth = getAuth();
-                //email 과 password로 
-                createUserWithEmailAndPassword(auth, email, password)
-                    .then((userCredential) => {
-                    // Signed in
-                    const user = userCredential.user;
-                    // ...
-                    })
-                    .catch((error) => {
-                const errorCode = error.code;
-                    const errorMessage = error.message;
-        // ..
-  });
-            })
+          
               
 </script>
     
