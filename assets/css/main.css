@@ -88,8 +88,7 @@ a {
 #pricing-table .pricing .pricing-table .pricing-header {
   position: relative;
   background:  #ff9a9a;
-
-  padding: 22px 22px;
+  padding: 18px 18px;
   text-align: center;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -143,7 +142,7 @@ a {
   border-bottom: 1px solid #EAECEB;
   color: #000000;
   font-family: 'Surround';
-  font-size: 9px;
+  font-size: 12px;
   text-align: center;
   line-height: 42px;
 }
