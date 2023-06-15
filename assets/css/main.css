@@ -75,7 +75,7 @@ a {
   border: 1px solid #ffffff;
 }
 #pricing-table {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 #pricing-table .pricing {
 
@@ -99,12 +99,12 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: 'Surround';
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   font-weight: 700;
 }
 #pricing-table .pricing .pricing-table .pricing-header .pricing-rate {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   color: #ffffff;
   font-family: 'Surround';
@@ -126,7 +126,7 @@ a {
   text-transform: uppercase;
 }
 #pricing-table .pricing .pricing-list {
-  padding: 20px 0 40px 0;
+  padding: 20px 0 20px 0;
   font-family: 'Surround';
   text-align: center;
   background: #fff7f8;
